@@ -9,7 +9,6 @@ import { Input } from "@/components/ui/input"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import {
-  MessageCircle,
   Send,
   Loader2,
   Heart,
