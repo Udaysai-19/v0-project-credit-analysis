@@ -1,9 +1,21 @@
-export default function Page() {
+import { Navbar } from "@/components/landing/navbar"
+import { Hero } from "@/components/landing/hero"
+import { Features } from "@/components/landing/features"
+import { HowItWorks } from "@/components/landing/how-it-works"
+import { CTA } from "@/components/landing/cta"
+import { Footer } from "@/components/landing/footer"
+
+export default function LandingPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <h1 className="text-4xl font-bold text-foreground">
-        ArogyaMitra is loading...
-      </h1>
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   )
 }
