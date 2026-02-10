@@ -31,6 +31,7 @@ import {
   X,
 } from "lucide-react"
 import { useState } from "react"
+import { FloatingAromi } from "@/components/dashboard/floating-aromi"
 
 interface Profile {
   id: string
@@ -237,6 +238,9 @@ export function DashboardShell({ user, profile, children }: DashboardShellProps)
         {/* Page content */}
         <main className="flex-1 overflow-y-auto p-6">{children}</main>
       </div>
+
+      {/* Floating AROMI Assistant */}
+      <FloatingAromi profile={profile} />
     </div>
   )
 }
